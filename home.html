@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        nav{
+            display: flex;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            border-bottom: 1.5px solid white;
+        }
+        nav ul {
+           display: flex;
+           justify-content: space-evenly;
+
+        }
+        nav ul li {
+            margin-right: 15px;
+            list-style-type: none;
+        }
+        nav ul li a{
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(178,213,244);
+        }
+        .left{
+            font-size: 30px;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            height:300px;
+            border-bottom: 1.5px solid white;
+        }
+
+        main {
+        height:600px;   
+        background-color: rgb(178, 213, 244);
+        }
+
+        .leftsection {
+            width: 30%;
+            padding-top: 70px;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .rightsection{
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Nabiha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftsection">
+                <div>Hello, My name is <span class="name">Nabiha </span>
+                    <div>and I am a passionate <div id="element">Web Developer</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="rightsection"><img src="icon.png"></div>
+        </section>
+    </main>
+    
+</body>
+</html>

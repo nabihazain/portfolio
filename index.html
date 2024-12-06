@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(3, 3, 67);
+            color: white;
+            font-family: poppins, sans-serif;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(3, 3, 67);
+            border-bottom: 1.5px solid white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            color: rgb(241, 187, 241);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+
+            text-decoration: underline;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            height:300px
+        }
+
+        main {
+        height:600px;   
+        }
+
+        .leftsection {
+            
+            
+            width: 30%;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            text-align: center;
+
+        }
+        .leftsection .btn{
+            background-color: rgb(6,6,67);
+            border: 2px solid white;
+            border-radius:3px;
+            padding: 12px;
+            margin-top: 30px;
+            color: white;
+        }
+        .rightsection {
+            width: 30%;
+            margin-top: 20px;
+        }
+
+        .rightsection img {
+            width: 100%;
+            
+        }
+
+        .name, #element {
+            color: rgb(227, 108, 227);
+        }
+
+        .text-gray {
+            color: rgb(114, 111, 111);
+        }
+
+        .secondSection h1 {
+            color: white;
+        }
+
+        .secondSection {
+            margin-left: 120px;
+            margin-top: 15px;
+        }
+
+        .secondSection .box {
+            display: flex;
+            background: white;
+            height: 2px;
+            width: 80vw;
+            margin: 56px 0;
+            justify-content: space-between;
+        }
+
+        .box .vertical {
+
+            height: 86px;
+            color: white;
+            width: 2px;
+            background-color: white;
+            margin: 0 56px;
+        }
+
+        .box .vertical img {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -8px;
+        }
+        .vertical-title{
+            position: relative;
+            top:60px;
+            left:-5px;
+            width:150px;
+        }
+       .vertical-desc{
+            position: relative;
+            top:70px;
+            left:-5px;
+            width: 150px;
+            font-size: 0.7rem;
+            color: gray;
+        }
+        footer{
+            height:150px;
+            background-color: rgb(3, 3, 67);
+            /* display: flex;
+            justify-content: space-evenly; */
+            padding-top: 20px;
+            margin: 0 120px;
+            border-top:1.5px solid white;
+        }
+        
+        hr{
+            border: 1px solid white;
+        }
+        footer ul{
+            margin-top: 20px;
+        }
+        footer ul a{
+            color: white;
+            font-size:1.1rem;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        footer ul a:hover{
+            color: rgb(230, 158, 230);
+            font-size:1.2rem;
+            text-decoration: underline;
+           
+        }
+
+        footer ul li{
+            list-style-type: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nabiha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftsection">
+                <div>Hello, My name is <span class="name">Nabiha </span>
+                    <div>and I am a passionate <div id="element">Web Developer</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                   <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection"><img src="pic.jpeg"></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I've done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"><img src="developer.png">
+                    <div class="vertical-title">HTML </div>
+                    <div class="vertical-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum iusto
+                        praesentium blanditiis corporis.</p> </div>
+                </div>
+                <div class="vertical"><img src="developer.png">
+                    <div class="vertical-title">CSS </div>
+                    <div class="vertical-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum iusto
+                        praesentium blanditiis corporis.</p> </div>
+                </div>
+                <div class="vertical"><img src="developer.png">
+                    <div class="vertical-title">JavaScript</div>
+                    <div class="vertical-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum iusto
+                        praesentium blanditiis corporis.</p> </div>
+                </div>
+                <div class="vertical"><img src="developer.png">
+                    <div class="vertical-title">Dev Ops</div>
+                    <div class="vertical-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum iusto
+                        praesentium blanditiis corporis.</p> </div>
+                </div>
+                <div class="vertical"><img src="developer.png">
+                    <div class="vertical-title">Frontend Developer</div>
+                    <div class="vertical-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum iusto
+                        praesentium blanditiis corporis.</p> </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="head"><h1>Projects</h1></div>
+        <div class="projects">
+            <ul>
+                <li><a href="C:\Users\saniy\OneDrive\Desktop\htmlcssproject\home.html" target="_blank">Amazon Clone</a></li>
+                <li><a href="C:\Users\saniy\OneDrive\Desktop\weatherapp\index.html" target="_blank">Weather App</a></li>
+            </ul>
+        </div>
+        <!-- <div class="services">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="services">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="services">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div> -->
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphics Designer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
